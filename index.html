@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ricardo Quiñones</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="sidebar">
+  <h1>ricardo</h1>
+  <h1>quiñones</h1>
+
+  <div class="image-wrapper">
+    <img src="IMG_5943-edit.png" alt="ricardo quiñones">
+  </div>
+
+  <ul>
+    <li class="menu bio bio-select"><a href="#" class="menu-text">bio</a></li>
+    <li class="menu portfolio"><a href="#" class="menu-text">portfolio</a></li>
+  </ul>
+
+
+</section>
+
+<section id="bio" class="main">
+  <h1>:bio</h1>
+  <p>I am a web developer with an interest in solving problems of all shapes and sizes. I am located in New York, and I would like to join a team that is working on thought provoking, challenging projects. My skillset includes Ruby on Rails, Javascript, Backbone.js, SQL, CSS, and HTML5. When I'm not coding away, you can find me either fiddling with a guitar, exercising, or enjoying a delicious cup of Café Pilón.</p>
+<br>
+<p>To get a hold of me, just click on any of the following links:</p>
+
+<ul id="contact-icons" class="group">
+  <li>
+    <a href="mailto:ricardo.a.quinones@gmail.com">
+      <img src="email.png" alt="ricardo.a.quinones@gmail.com">
+    </a>
+  </li>
+  <li>
+    <a href="http://www.linkedin.com/pub/ricardo-quinones/31/a92/b09">
+      <img src="linkedin.png" alt="Ricardo Quiñones' LinkedIn Profile">
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/ricardo-quinones">
+      <img src="github.png" alt="Ricardo Quiñones' Github Page">
+    </a>
+  </li>
+</ul>
+</section>
+
+<section id="portfolio">
+  <h1>:portfolio</h1>
+  <br>
+  <ul>
+    <li>
+      <h2>
+        :gcalclone
+        <span>
+          <a href="http://mycal.ricardoaquinones.com">website</a> |
+          <a href="http://github.com/ricardo-quinones/GCalClone">github</a>
+        </span>
+      </h2>
+      <ul class="bulleted">
+        <li>
+          <p>Built a Backbone single-page, web application with a Rails back-end where users can share calendars and their availability with other users.</p>
+        </li>
+        <li>
+          <p>Has ability to limit how much control a user can have when a user shares their calendar.</p>
+        </li>
+        <li>
+          <p>Improved on Google Calendar’s availability model by allowing users to set their own “Free/Busy” status for events shared through other users’ calendars</p>
+        </li>
+        <li>
+          <p>Overrode Backbone to a perform a “PUT” request, as opposed to its default “PATCH” request, in order to cooperate nicely with Rails’ RESTful architecture.</p>
+        </li>
+      </ul>
+    </li>
+    <hr>
+    <li>
+      <h2>
+        :snake
+        <span>
+          <a href="http://ricardo-quinones.github.io/Snake">website</a> |
+          <a href="http://github.com/ricardo-quinones/Snake">github</a>
+        </span>
+      </h2>
+      <ul class="bulleted">
+        <li>
+          <p>Developed a classic Javascript Snake game</p>
+        </li>
+        <li>
+          <p>Keeps track of high scores and allows playing multiple games</p>
+        </li>
+        <li>
+          <p>Users can pause and start games with the "space" bar</p>
+        </li>
+      </ul>
+    </li>
+    <hr>
+    <li>
+      <h2>
+        :tictactoe
+        <span>
+          <a href="http://ricardo-quinones.github.io/tictactoe">website</a> |
+          <a href="http://github.com/ricardo-quinones/tictactoe">github</a>
+        </span>
+      </h2>
+      <ul class="bulleted">
+        <li>
+          <p>Developed a Javascript Tic-Tac-Toe game</p>
+        </li>
+        <li>
+          <p>Detects winner and draw game scenarios</p>
+        </li>
+        <li>
+          <p>Allows multiple games</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script>
+$(document).ready(function () {
+  currentView = $("#bio");
+
+  $(".menu").on("click", function (event) {
+    var text = $(this).find("a").text();
+
+    $(".menu").each(function () {
+      var $li = $(this);
+      var $a = $(this).find("a");
+
+      if (text == $a.text()) {
+        $li.addClass($a.text() + "-select")
+
+        var width = $li.width() - $a.width();
+        $li.animate({
+          "padding-left": width
+        }, 600);
+
+        currentView.removeClass("main");
+        currentView = $("#" + $a.text());
+        currentView.addClass("main");
+      }
+      else {
+        $li.removeClass($a.text() + "-select");
+        $li.animate({
+          "padding-left": 5
+        }, 600);
+      };
+    });
+  });
+});
+</script>
+</body>
+</html>

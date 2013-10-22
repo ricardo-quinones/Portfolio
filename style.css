@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Cherry+Swash);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100);
+
+/* strip all styling */
+
+html, body, h1, h2, h3, h4, h5, h6, ul, li, a, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: black;
+  list-style: none;
+  font: inherit;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: 'Cherry Swash', sans-serif;
+  vertical-align: baseline;
+  cursor: default;
+}
+
+body {
+  background: #fff;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+h2 a {
+  color: #aaa;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+}
+
+p {
+  line-height: 1.7em;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#sidebar {
+  padding: 10px;
+  display: inline-block;
+}
+
+#bio {
+  display: none;
+}
+
+#portfolio {
+  display: none;
+}
+
+#bio.main {
+  display: inline-block;
+}
+
+.main h1 {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#bio h1 {
+  background: rgb(160, 230, 160);
+}
+
+#portfolio.main {
+  display: inline-block;
+}
+
+#portfolio h1 {
+  background: rgb(220, 150, 150);
+}
+
+#portfolio li {
+  cursor: default;
+}
+
+.bulleted > li {
+  display: list-item;
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.main {
+  vertical-align: top;
+  padding-top: 20px;
+  margin-left: 100px;
+  width: 900px;
+  font-family: "Arvo", sans-serif;
+}
+
+.main h1 {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-family: "Arvo", sans-serif;
+}
+
+.main p {
+  font-size: 20px;
+  font-family: "Arvo", sans-serif;
+}
+
+.main a {
+  cursor: pointer;
+}
+
+.main a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+#sidebar ul {
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+}
+
+li {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+li > a {
+  display: inline;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-text:before {
+  content: ":";
+}
+
+.bio:hover {
+  background: rgb(160, 230, 160);
+}
+
+.portfolio:hover {
+  background: rgb(220, 150, 150);
+}
+
+.contact:hover {
+  background: rgb(150, 190, 240);
+}
+
+.bio-select {
+  padding-left: 155px;
+  background: rgb(160, 230, 160);
+  cursor: default;
+}
+
+.bio-select a {
+  cursor: default;
+}
+
+.portfolio-select {
+  background: rgb(220, 150, 150);
+  cursor: default;
+}
+
+.portfolio-select a {
+  cursor: default;
+}
+
+.image-wrapper {
+  width: 150px;
+  border-radius: 75px;
+  margin: auto;
+}
+
+.image-wrapper > img {
+  -webkit-transition-property: border-radius, opacity;
+  -webkit-transition: all 1s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  border-radius: 75px;
+  border-radius: 2px solid rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
+  margin: 15px 0px;
+}
+
+.image-wrapper > img:hover {
+  -webkit-transition-property: border-radius, opacity;
+  -webkit-transition: all 1s ease-in-out;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+#contact-icons {
+  display: block;
+  width: 430px;
+  margin: auto;
+  padding: 20px;
+}
+
+#contact-icons > li {
+  -webkit-transition: margin 0.3s ease-out;
+  display: inline-block;
+  float: left;
+  width: 120px;
+  margin-top: 15px;
+}
+
+#contact-icons > li:hover {
+  margin-top: 2px;
+}
+
+#contact-icons > li > a {
+  display: block;
+}
+
+#contact-icons > li > a > img {
+  display: block;
+  width: 100%;
+}
