@@ -19,7 +19,18 @@ html, body, h1, h2, h3, h4, h5, h6, ul, li, a, p {
 }
 
 body {
+  background: #444;
+  min-width: 1140px;
+}
+
+#content {
+  position: absolute;
   background: #fff;
+  width: 1140px;
+  bottom: 0;
+  top: 0;
+  left: 50%;
+  margin-left: -570px;
 }
 
 h2 {
@@ -31,7 +42,7 @@ span {
 }
 
 h2 a {
-  color: #aaa;
+  color: #999;
   font-family: "Roboto Slab", serif;
   font-size: 24px;
 }
@@ -93,8 +104,8 @@ p {
 .main {
   vertical-align: top;
   padding-top: 20px;
-  margin-left: 100px;
-  width: 900px;
+  margin-left: 60px;
+  width: 850px;
   font-family: "Arvo", sans-serif;
 }
 
