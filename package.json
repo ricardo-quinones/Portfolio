@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website of Ricardo Quiñones",
+  "main": "jquery.js",
+  "dependencies": {
+    "webpack": "2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardo-quinones/Portfolio.git"
+  },
+  "author": "Ricardo A. Quiñones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardo-quinones/Portfolio/issues"
+  },
+  "homepage": "https://github.com/ricardo-quinones/Portfolio#readme"
+}
